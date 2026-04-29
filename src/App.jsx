@@ -39,7 +39,7 @@ const css = `
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 :root{--ivory:#FDF8F3;--cream:#F7EFE5;--rose:#C8926A;--gold:#C9A84C;--deep:#1A0A00;--muted:#8A7060;--blush:#F2D9CA;--green:#25D366;--red:#e74c3c;}
 html{scroll-behavior:smooth;}
-body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);overflow-x:hidden;}
+html,body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);overflow-x:hidden;margin:0;padding:0;}
 
 @keyframes toastIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
@@ -142,7 +142,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);
 .admin-shield svg{width:16px;height:16px;color:rgb(255, 221, 0);transition:color .3s;}
 .admin-shield:hover svg{color:rgba(253,248,243,.2);}
 
-.footer{background:var(--deep);padding:48px 48px 12px;overflow:hidden;box-sizing:border-box;}
+.footer{background:var(--deep);padding:48px 48px 12px;box-sizing:border-box;}
 .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px;}
 .footer-brand{font-family:'Playfair Display',serif;font-size:18px;color:var(--ivory);margin-bottom:12px;}
 .footer-brand span{color:var(--gold);font-style:italic;}
@@ -151,7 +151,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);
 .footer-link{display:block;background:none;border:none;font-size:13px;color:rgba(253,248,243,.5);cursor:pointer;padding:4px 0;text-align:left;font-family:'DM Sans',sans-serif;transition:color .2s;}
 .footer-link:hover{color:var(--ivory);}
 .footer-contact-item{font-size:13px;color:rgba(253,248,243,.5);padding:4px 0;}
-.footer-bottom{border-top:1px solid rgba(201,168,76,.15);padding-top:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
+.footer-bottom{border-top:1px solid rgba(201,168,76,.15);padding-top:16px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;width:100%;box-sizing:border-box;}
 .footer-copy{font-size:12px;color:rgba(253,248,243,.25);}
 .footer-dev{font-size:11px;color:rgba(253,248,243,.2);letter-spacing:1px;text-transform:uppercase;}
 .footer-dev span{color:rgba(201,168,76,.35);}
