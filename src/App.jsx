@@ -142,7 +142,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);
 .admin-shield svg{width:16px;height:16px;color:rgb(255, 221, 0);transition:color .3s;}
 .admin-shield:hover svg{color:rgba(253,248,243,.2);}
 
-.footer{background:var(--deep);padding:48px 48px 12px;}
+.footer{background:var(--deep);padding:48px 48px 12px;overflow:hidden;box-sizing:border-box;}
 .footer-top{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:40px;margin-bottom:40px;}
 .footer-brand{font-family:'Playfair Display',serif;font-size:18px;color:var(--ivory);margin-bottom:12px;}
 .footer-brand span{color:var(--gold);font-style:italic;}
