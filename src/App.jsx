@@ -38,8 +38,8 @@ const css = `
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,400&family=DM+Sans:wght@300;400;500;600&display=swap');
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 :root{--ivory:#FDF8F3;--cream:#F7EFE5;--rose:#C8926A;--gold:#C9A84C;--deep:#1A0A00;--muted:#8A7060;--blush:#F2D9CA;--green:#25D366;--red:#e74c3c;}
-html{scroll-behavior:smooth;}
-html,body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);overflow-x:hidden;margin:0;padding:0;}
+html{scroll-behavior:smooth;background:var(--deep);}
+html,body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);overflow-x:hidden;margin:0;padding:0;height:100%;}
 
 @keyframes toastIn{from{opacity:0;transform:translateX(40px)}to{opacity:1;transform:translateX(0)}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
