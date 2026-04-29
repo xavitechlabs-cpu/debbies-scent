@@ -180,7 +180,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);
 .product-card:hover{transform:translateY(-5px);box-shadow:0 10px 36px rgba(26,10,0,.13);}
 .product-card.out-of-stock{opacity:.7;}
 .product-img{height:200px;display:flex;align-items:center;justify-content:center;font-size:58px;position:relative;cursor:pointer;overflow:hidden;}
-.product-img img{width:100%;height:100%;object-fit:cover;transition:transform .4s;}
+.product-img img{width:100%;height:100%;object-fit:contain;transition:transform .4s;}
 .product-card:hover .product-img img{transform:scale(1.05);}
 .img-perfume{background:linear-gradient(135deg,#EDD5C0 0%,#D4A0C4 100%);}
 .img-fashion{background:linear-gradient(135deg,#D4C4B8 0%,#C8926A 100%);}
@@ -227,7 +227,7 @@ body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);
 .modal-close{position:absolute;top:16px;right:16px;z-index:10;background:white;border:1px solid rgba(201,168,76,.3);width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:all .2s;color:var(--deep);font-size:16px;}
 .modal-close:hover{background:var(--deep);color:var(--ivory);}
 .modal-img{height:280px;display:flex;align-items:center;justify-content:center;font-size:80px;position:relative;overflow:hidden;border-radius:16px 16px 0 0;}
-.modal-img img{width:100%;height:100%;object-fit:cover;}
+.modal-img img{width:100%;height:100%;object-fit:contain;background:#f9f5f0;}
 .modal-body{padding:28px;}
 .modal-tag{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:600;}
 .modal-name{font-family:'Playfair Display',serif;font-size:32px;color:var(--deep);margin-bottom:8px;}
@@ -373,9 +373,13 @@ body{font-family:'DM Sans',sans-serif;background:var(--ivory);color:var(--deep);
   .products-page{padding:86px 20px 50px;}
   .cart-page{padding:86px 20px 50px;}
   .contact-page{padding:100px 20px 60px;}
-  .footer{padding:40px 24px 12px;}
-  .footer-top{grid-template-columns:1fr;gap:28px;}
-  .modal-img{height:220px;}
+.footer{padding:40px 24px 12px;overflow:hidden;box-sizing:border-box;}
+.footer-top{grid-template-columns:1fr;gap:28px;width:100%;}
+.footer-bottom{flex-direction:column;gap:8px;text-align:center;width:100%;}
+.footer-copy{font-size:11px;}
+.footer-dev{font-size:11px;}
+
+.modal-img{height:260px;}
   .modal-body{padding:20px;}
   .modal-actions{flex-direction:column;}
   .cart-item{flex-wrap:wrap;}
